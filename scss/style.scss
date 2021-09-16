@@ -132,7 +132,7 @@ body{
 //---------- intro styles start -----------
 .intro{
   min-height: 100vh;
-  background: url(/img/intro-bg.png) no-repeat center 24px;
+  background: url(../img/intro-bg.png) no-repeat center 24px;
   background-size: cover;
   &__title{
     padding-top: 320px;
@@ -161,7 +161,7 @@ body{
 }
 .search-submit{
   border-left: none;
-  background: url(/img/svg/search.svg) no-repeat center right 16px;
+  background: url(../img/svg/search.svg) no-repeat center right 16px;
   width: 32px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
