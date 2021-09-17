@@ -33,7 +33,31 @@ body{
                                       rgba(51, 51, 51, 0.15) 58.6%,
                                       rgba(27, 27, 27, 0.0001) 100%);
   mix-blend-mode: normal;
-
+  transition: 0.4s linear;
+  z-index: 999;
+  a{
+    color: white;
+  }
+  &_active{
+    background: white;   
+    a, .search-input, .search-input::placeholder{
+      color: black;
+    }
+    .header__nav{ 
+      text-shadow:none;  
+    }
+    .header__top-bar{
+      background:#F7F7F7;      
+    }
+    .search-info{
+      .search-input, .search-submit{
+        background-color:#F7F7F7 ;
+      }
+    }
+    .search-submit{
+      background: url(../img/svg/search-black-ico.svg) no-repeat center right 16px;  
+    }
+  }
   &__nav{
     font-family: Poppins;
     font-style: normal;
@@ -108,9 +132,7 @@ body{
   opacity: 75%;
   }
   
-  a{
-    color: white;
-  }
+
 }
 
 .login{
@@ -170,7 +192,7 @@ body{
   font-family: Poppins;
   font-style: normal;
   font-weight: 300;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 16px; 
   letter-spacing: 0.8px;
   color: white;
@@ -249,11 +271,19 @@ body{
   height: 197px;
   background: #F7F7F7;
   &__boxes{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 40px;
-    padding: 0 282px;
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-column-gap: 40px;
+    // padding: 0 282px;
+    // grid-auto-columns: minmax(100px, auto);
+    // max-width: 890px;
+    display: flex;
+    justify-content: space-around;
   }
+  &__box{
+    max-width: 186px;
+  }
+
   .copyright{
     max-width: 100%;
     display: flex;
@@ -280,7 +310,7 @@ body{
     padding-top: 17px;
   }
   &__item{
-    width: 146px;
+    max-width: 146px;
     margin-top: 6px;
     font-size: 12px;
     line-height: 19px;
