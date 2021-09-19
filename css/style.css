@@ -1033,6 +1033,9 @@ body {
     padding: 5vw 0;
     margin-bottom: 5vw;
   }
+  .search-input{
+    font-size: 3vw;
+  }
 
   .search-input::placeholder {
     font-size: 3vw;
