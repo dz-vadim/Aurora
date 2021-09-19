@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">  <!-- http://valerah7.beget.tech/ -->
+<html lang="en">
+<!-- http://valerah7.beget.tech/ -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,64 +17,107 @@
     <meta name="msapplication-config" content="img\favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
+
 <body>
 
     <header class="header">
         <div class="wrapper">
             <div class="header__top-bar">
                 <div class="header__top-bar__title">We deliver Worldwide</div>
-                    <div class="header__top-bar__location">
-                        <img class="header__top-bar__location-img" src="./img/svg/pin.svg" alt="">
-                        <div class="header__top-bar__location-text">Our stores</div>
-                    </div>
+                <div class="header__top-bar__location">
+                    <img class="header__top-bar__location-img" src="./img/svg/pin.svg" alt="">
+                    <div class="header__top-bar__location-text">Our stores</div>
+                </div>
             </div>
-            <div class="header__wrapper">
+            <div class="header__wrapper ">
+
+                <div class="nav_menu">
+                    <div id="menu-toggle">
+                        <div id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div id="cross">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <img src="./img/svg/search.svg" alt="" class="search_icon">
+                    <img src="./img/svg/search-black-ico.svg" alt="" class="search_icon_black">
+
+                    <img src="./img/svg/cross_icon.png" alt="" class="cross_icon">
+                    <img src="./img/svg/cross_icon_black.png" alt="" class="cross_icon_black">
+                </div>
+
                 <div class="header__logo">
-                    <a href="/" class="header__logo-link">
-                        <p>Aurora</p>                
+                    <a href="#" class="header__logo-link">
+                        <p>Aurora</p>
                     </a>
                 </div>
-    
+
                 <form class="header__search">
                     <div class="search-info">
-                        <input type="text" class="search-input" name="user-search" placeholder="What are you looking for?">
+                        <input type="text" class="search-input" name="user-search"
+                            placeholder="What are you looking for?">
                         <button type="submit" class="search-submit">
-                            
+
                         </button>
                     </div>
                 </form>
-    
+
                 <div class="login">
                     <a href="#!" class="login-link">
-                        <span class="login__text">Sign in  |  Register</span>
+                        <span class="login__text">Sign in | Register</span>
                         <img src="./img/svg/login.svg" alt="Sign in  |  Register" class="header__logo-pic">
                     </a>
                 </div>
+
+                <form class="header__search_second">
+                    <div class="search-info">
+                        <input type="text" class="search-input" name="user-search"
+                            placeholder="What are you looking for?">
+                        <button type="submit" class="search-submit">
+
+                        </button>
+                    </div>
+                </form>
+
             </div>
 
             <div class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
                         <a href="#!" class="header__link">what’s new</a>
+                        <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right_h">
                     </li>
                     <li class="header__item">
                         <a href="#!" class="header__link">women</a>
+                        <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right_h">
+                        
                     </li>
                     <li class="header__item">
                         <a href="#!" class="header__link">accessories</a>
+                        <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right_h">
                     </li>
                     <li class="header__item">
                         <a href="#!" class="header__link">kids</a>
+                        <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right_h">
                     </li>
                     <li class="header__item">
                         <a href="#!" class="header__link">beauty</a>
+                        <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right_h">
                     </li>
                     <li class="header__item">
                         <a href="#!" class="header__link">outlet</a>
+                        <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right_h">
                     </li>
                     <li class="header__item">
                         <a href="#!" class="header__link">stories</a>
+                        <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right_h">
                     </li>
                 </ul>
             </div>
@@ -90,8 +135,9 @@
                             New arrivals. Exclusive previews. First access to sales. Sign up to stay in the know.
                         </h3>
                         <div class="register__submit-block">
-                            <input type="email" class="register__input" name="user-register" placeholder="Your email address">
-                            <button type="submit" class="register__submit">register</button>    
+                            <input type="email" class="register__input" name="user-register"
+                                placeholder="Your email address">
+                            <button type="submit" class="register__submit">register</button>
                         </div>
                     </div>
                 </form>
@@ -103,6 +149,8 @@
             <!-- .footer__box*5>h2>ul.footer__list>li.footer__item*3>a.footer__link -->
             <div class="footer__box">
                 <h2 class="footer__title">About Us</h2>
+                <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right">
+                <img src="./img/svg/arrow_down.svg" alt="" class="arrow_down">
                 <ul class="footer__list">
                     <li class="footer__item"><a href="#!" class="footer__link">Who we are</a></li>
                     <li class="footer__item"><a href="#!" class="footer__link">Our stores</a></li>
@@ -111,6 +159,8 @@
             </div>
             <div class="footer__box">
                 <h2 class="footer__title">Categories</h2>
+                <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right">
+                <img src="./img/svg/arrow_down.svg" alt="" class="arrow_down">
                 <ul class="footer__list">
                     <li class="footer__item"><a href="#!" class="footer__link">Women fashion</a></li>
                     <li class="footer__item"><a href="#!" class="footer__link">Accessories</a></li>
@@ -119,38 +169,43 @@
             </div>
             <div class="footer__box">
                 <h2 class="footer__title">Help</h2>
+                <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right">
+                <img src="./img/svg/arrow_down.svg" alt="" class="arrow_down">
                 <ul class="footer__list">
                     <li class="footer__item"><a href="#!" class="footer__link">Customer service</a></li>
                     <li class="footer__item"><a href="#!" class="footer__link">Size guide</a></li>
                     <li class="footer__item"><a href="#!" class="footer__link">Contact us</a></li>
                 </ul>
+
             </div>
             <div class="footer__box">
                 <h2 class="footer__title">Payments & Delivery</h2>
+                <img src="./img/svg/arrow_right.svg" alt="" class="arrow_right">
+                <img src="./img/svg/arrow_down.svg" alt="" class="arrow_down">
                 <ul class="footer__list">
                     <li class="footer__item"><a href="#!" class="footer__link">Purchase terms</a></li>
                     <li class="footer__item"><a href="#!" class="footer__link">Guarantee</a></li>
                 </ul>
             </div>
-            <div class="footer__box">
-                <h2 class="footer__title">Social</h2>
+            <div class="footer__box footer__box_social">
+                <h2 class="footer__title footer__title_social">Social</h2>
                 <div class="social__wrapper">
                     <ul class="social__list">
                         <li class="social__item"><a href="#!" class="social__link">
-                            <img src="./img/svg/insta.svg" alt="instagram">
-                        </a></li>
+                                <img src="./img/svg/insta.svg" alt="instagram">
+                            </a></li>
                         <li class="social__item"><a href="#!" class="social__link">
-                            <img src="./img/svg/twitter.svg" alt="twitter">
-                        </a></li>
+                                <img src="./img/svg/twitter.svg" alt="twitter">
+                            </a></li>
                         <li class="social__item"><a href="#!" class="social__link">
-                            <img src="./img/svg/snapchat.svg" alt="snapchat">
-                        </a></li>
+                                <img src="./img/svg/snapchat.svg" alt="snapchat">
+                            </a></li>
                         <li class="social__item"><a href="#!" class="social__link">
-                            <img src="./img/svg/facebook.svg" alt="facebook">
-                        </a></li>
+                                <img src="./img/svg/facebook.svg" alt="facebook">
+                            </a></li>
                         <li class="social__item"><a href="#!" class="social__link">
-                            <img src="./img/svg/youtube.svg" alt="youtube">
-                        </a></li>
+                                <img src="./img/svg/youtube.svg" alt="youtube">
+                            </a></li>
                     </ul>
                 </div>
             </div>
@@ -159,4 +214,5 @@
     </footer>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
